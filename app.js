@@ -25,4 +25,4 @@ document.getElementById('hours').innerHTML = timeHours
 document.getElementById('minutes').innerHTML = timeMinutes
 document.getElementById('seconds').innerHTML = timeSeconds
 }
-countdown()
+setInterval(countdown, 1000)
