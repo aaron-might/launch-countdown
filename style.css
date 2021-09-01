@@ -41,6 +41,12 @@ body {
     min-height: 70vh;
     /* min-width: 100; */
 }
+
+.container h1{
+    color:white !important;
+    font-size:30px;
+    text-transform: uppercase;
+}
 /* countdown */
 .countdown {
   display:flex;
@@ -52,9 +58,10 @@ body {
     margin: 10px
 }
 .countdown p {
-    padding: 20px;
     color: hsl(345, 95%, 68%);
     background-color: hsl(236, 21%, 26%);
+    font-size: 32px;
+    padding: 20px;
     /* margin:10px; */
     border-radius: 5px;
 }
