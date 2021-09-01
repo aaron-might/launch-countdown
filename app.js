@@ -4,7 +4,7 @@ const endDate= new Date('September 30, 2021 00:00:00').getTime();
 const now = new Date().getTime();
 // console.log(now)
 const difference = endDate - now;
-console.log(difference)
+// console.log(difference)
 
 const seconds = 1000
 const minutes = seconds * 60
@@ -15,9 +15,14 @@ const timeDays = Math.floor(difference / days)
 const timeHours = Math.floor((difference % days)/hours)
 const timeMinutes = Math.floor((difference % hours)/minutes)
 const timeSeconds = Math.floor((difference % minutes)/seconds)
-console.log(timeDays)
-console.log(timeHours)
-console.log(timeMinutes)
+// console.log(timeDays)
+// console.log(timeHours)
+// console.log(timeMinutes)
 console.log(timeSeconds)
+
+document.getElementById('days').innerHTML = timeDays
+document.getElementById('hours').innerHTML = timeHours
+document.getElementById('minutes').innerHTML = timeMinutes
+document.getElementById('seconds').innerHTML = timeSeconds
 }
 countdown()
