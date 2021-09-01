@@ -12,6 +12,12 @@ const hours = minutes *60
 const days = hours * 24
 
 const timeDays = Math.floor(difference / days)
+const timeHours = Math.floor((difference % days)/hours)
+const timeMinutes = Math.floor((difference % hours)/minutes)
+const timeSeconds = Math.floor((difference % minutes)/seconds)
 console.log(timeDays)
+console.log(timeHours)
+console.log(timeMinutes)
+console.log(timeSeconds)
 }
 countdown()
