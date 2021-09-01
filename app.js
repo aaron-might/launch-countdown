@@ -19,7 +19,10 @@ let timeSeconds = Math.floor((difference % minutes)/seconds)
 // console.log(timeHours)
 // console.log(timeMinutes)
 console.log(timeSeconds)
-timeHours = timeHours < 10 ? "0" +timeHours : timeHours
+timeHours = timeHours < 10 ? "0" + timeHours : timeHours
+timeMinutes = timeMinutes <10 ? "0" + timeMinutes : timeMinutes
+timeSeconds = timeSeconds < 10 ? "0" + timeSeconds : timeSeconds
+// timeHours = timeHours < 10 ? "0" +timeHours : timeHours
 
 document.getElementById('days').innerHTML = timeDays
 document.getElementById('hours').innerHTML = timeHours
