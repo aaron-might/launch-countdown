@@ -32,12 +32,34 @@ body {
     color: hsl(228, 45%, 44%); 
 }
 
+/* Container */
+.container {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 70vh;
+    /* min-width: 100; */
+}
+/* countdown */
+.countdown {
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.countdown p {
+    padding: 20px;
+    margin:10px;
+}
 /* socials */
 
 .socials {
     position: absolute;
     bottom: 30px;
     left:50%;
+    transform: translateX(-50%);
     z-index: 999;
 }
 
